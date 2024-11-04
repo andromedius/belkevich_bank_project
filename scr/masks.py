@@ -16,8 +16,3 @@ def get_mask_account(bank_account_number: str) -> str:
 
 
 print(get_mask_account(str()))
-
-
-# input("Введите номер счёта"
-
-# input("Введите номер карты")

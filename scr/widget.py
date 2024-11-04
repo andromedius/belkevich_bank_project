@@ -1,4 +1,4 @@
-from masks import get_mask_card_number, get_mask_account
+from masks import get_mask_account, get_mask_card_number
 
 
 def mask_account_card(type_and_number: str) -> str:
@@ -18,7 +18,8 @@ def mask_account_card(type_and_number: str) -> str:
         return f"{text_result} {get_mask_card_number(digit_result)}"
 
 
-print(mask_account_card("Master Card 3214569874123698"))
+print(mask_account_card("Master Card 32145698741236980213"))
+
 
 def get_date(date_of_operation: str) -> str:
     """ Функция, которая возвращает строку с датой в формате ДД.ММ.ГГГГ"""

@@ -1,6 +1,6 @@
 import pytest
 
-from src.masks import get_mask_card_number, get_mask_account
+from src.masks import get_mask_account, get_mask_card_number
 
 
 def test_get_mask_card_number():
@@ -43,7 +43,7 @@ def test_get_mask_account_let():
     assert get_mask_account('1234567vv7654321') == 'Неправильный номер счёта'
 
 
-@pytest.mark.parametrize('value, expected',[
+@pytest.mark.parametrize('value, expected', [
     ('', 'Отсутствует номер счёта'),
     ('1234567890123456', 'Неправильный номер счёта'),
     ('12345678901234567890', '** 7890'),

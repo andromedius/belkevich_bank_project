@@ -42,6 +42,7 @@ def card_number_generator(start, stop):
             else:
                 card_number_not_formatted = number_str
 
-            card_number = f"{card_number_not_formatted[:4]} {card_number_not_formatted[4:8]} {card_number_not_formatted[8:12]} {card_number_not_formatted[12:]}"
+            card_number = (f"{card_number_not_formatted[:4]} {card_number_not_formatted[4:8]} "
+                           f"{card_number_not_formatted[8:12]} {card_number_not_formatted[12:]}")
 
             yield card_number

@@ -220,6 +220,7 @@ def transactions_list_invalid():
         ]
     )
 
+
 @pytest.fixture
 def transactions_list_empty():
     return []
